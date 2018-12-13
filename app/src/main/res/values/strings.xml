@@ -4,4 +4,6 @@
     <string name="begin_top">Немогли бы вы пройти небольшой опрос. Это займет у вас буквально пару минут</string>
     <string name="button_first">Начать опрос</string>
     <string name="button_back">Закончить опрос</string>
+    <string name="question1_title">Вопрос №1</string>
+    <string name="question1_text">Вопрос с текстом, ниже будут варианты ответа</string>
 </resources>

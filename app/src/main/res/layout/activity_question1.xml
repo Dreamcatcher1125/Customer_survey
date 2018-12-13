@@ -15,18 +15,33 @@
         tools:layout_editor_absoluteY="274dp"
         tools:ignore="MissingConstraints">
 
+        <TextView
+            android:id="@+id/question1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question1_title"
+            android:layout_marginTop="100px"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/question1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question1_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:text="@string/question1_text" />
+
     <Button
         android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_back"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="0dp"
         android:layout_centerHorizontal="true"
         android:onClick="back"
-        android:layout_marginTop="100px"
-        />
+        android:layout_marginTop="300px"
+        android:layout_below="@id/question1_text"/>
 
-</RelativeLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

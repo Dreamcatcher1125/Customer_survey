@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Опрос клиентов</string>
+    <string name="begin_first">Добрый день, уважаемый клиент!</string>
+    <string name="begin_top">Немогли бы вы пройти небольшой опрос. Это займет у вас буквально пару минут</string>
+    <string name="button_first">Начать опрос</string>
+    <string name="button_back">Закончить опрос</string>
+</resources>

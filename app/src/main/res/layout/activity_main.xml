@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.wtg.omg.customer_survey.MainActivity">
@@ -12,20 +11,19 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="274dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="274dp">
 
         <TextView
             android:id="@+id/text_top"
             android:layout_width="314dp"
             android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
             android:text="@string/begin_first"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="100px"
-            android:layout_centerHorizontal="true"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textCenter"
@@ -34,6 +32,8 @@
             android:layout_below="@id/text_top"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100px"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:text="@string/begin_top"
             android:textSize="18sp" />
 
@@ -41,12 +41,12 @@
             android:id="@+id/button1"
             android:layout_width="132dp"
             android:layout_height="70dp"
-            android:text="@string/button_first"
             android:layout_below="@id/textCenter"
-            android:layout_marginTop="150px"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="150px"
+            android:layout_marginBottom="25dp"
             android:onClick="begin"
-            />
+            android:text="@string/button_first" />
 
     </RelativeLayout>
 

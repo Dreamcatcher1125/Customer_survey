@@ -11,17 +11,19 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="274dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="274dp">
 
         <TextView
             android:id="@+id/question1_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
             android:text="@string/question1_title"
-            android:layout_marginTop="100px"
-            android:layout_centerHorizontal="true"/>
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/question1_text"
@@ -29,18 +31,74 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/question1_title"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100px"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:text="@string/question1_text" />
 
-    <Button
-        android:id="@+id/button_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_back"
-        android:layout_centerHorizontal="true"
-        android:onClick="back"
-        android:layout_marginTop="300px"
-        android:layout_below="@id/question1_text"/>
+        <RadioGroup
+            android:id="@+id/answer1_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question1_text"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:text="@string/answer1_1" />
+
+            <RadioButton
+                android:id="@+id/answer1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:text="@string/answer1_2" />
+
+            <RadioButton
+                android:id="@+id/answer1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:text="@string/answer1_3" />
+
+            <RadioButton
+                android:id="@+id/answer1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:text="@string/answer1_3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_question1"
+            android:layout_width="154dp"
+            android:layout_height="59dp"
+            android:layout_below="@id/answer1_radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:onClick="question1_next"
+            android:text="@string/question1_button" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/button_question1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="back"
+            android:text="@string/button_back"
+            android:textSize="10sp" />
+
 
     </RelativeLayout>
 

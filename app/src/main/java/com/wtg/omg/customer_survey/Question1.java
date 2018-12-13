@@ -13,8 +13,13 @@ public class Question1 extends AppCompatActivity {
         setContentView(R.layout.activity_question1);
     }
 
+    public void question1_next(View view) {
+        // Тут переход к следующей Активити и сохранение того, что мы выбрали из ответов, придумать куда сохранять
+    }
+
     public void back(View view) {
         Intent intent = new Intent(Question1.this, MainActivity.class);
         startActivity(intent);
+        // тут нужно обнулять переменную сохраненных ответов, везде копировать эту кнопку
     }
 }

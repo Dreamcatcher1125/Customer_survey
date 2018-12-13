@@ -3,7 +3,13 @@
     <string name="begin_first">Добрый день, уважаемый клиент!</string>
     <string name="begin_top">Немогли бы вы пройти небольшой опрос. Это займет у вас буквально пару минут</string>
     <string name="button_first">Начать опрос</string>
-    <string name="button_back">Закончить опрос</string>
+    <string name="button_back">Прекратить опрос</string>
     <string name="question1_title">Вопрос №1</string>
     <string name="question1_text">Вопрос с текстом, ниже будут варианты ответа</string>
+    <string name="question1_button">Выбрать ответ</string>
+
+    <string name="answer1_1">Вариант ответа 1</string>
+    <string name="answer1_2">Вариант ответа 2</string>
+    <string name="answer1_3">Вариант ответа 3</string>
+    <string name="answer1_4">Вариант ответа 4</string>
 </resources>

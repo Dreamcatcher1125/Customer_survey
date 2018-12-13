@@ -11,11 +11,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
-    public void begin(View View)
-    {
+    public void begin(View View) {
         Intent intent = new Intent(MainActivity.this, Question1.class);
         startActivity(intent);
     }
